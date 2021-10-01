@@ -16,9 +16,7 @@ $ kubectl run -it esrally --image=kamolhasan/esrally:0.0.4 -- /bin/sh
 Once you are inside the pod:
 
 ```bash
-$ esrally race --pipeline=benchmark-only --target-hosts="sample-es.demo:9200" --client-options="basic_
-auth_user:'elastic',basic_auth_password:'Ff7f~v-W!cnlS3Cq',use_ssl:true,verify_certs:false" --track=geon
-ames --kill-running-processes
+$ esrally race --pipeline=benchmark-only --target-hosts="sample-es.demo:9200" --client-options="basic_auth_user:'elastic',basic_auth_password:'Ff7f~v-W!cnlS3Cq',use_ssl:true,verify_certs:false" --track=geonames --kill-running-processes
 ```
 
 **N.B.:** Use `esrally race --help` to understand the meaning of the passed flags.
